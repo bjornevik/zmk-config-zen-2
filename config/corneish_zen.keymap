@@ -31,16 +31,16 @@
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// | HYPER |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | MEH  |
-// | CTRL  |  6  |  7  |  8  |  9  |  0  |   | LFT | DWN  |  UP | RGT |     |      |
-// | SHFT  |     |     |     |     |     |   |     |      |     |     |     |      |
-//                     | ALT |     | SPC |   | ENT | BOTH | GUI |
+// | HYPER |  1  | 2   | 3    |  4    |  5  |   |  6  |  7   |  8  |  9  |  0  | MEH  |
+// | CTRL  |  6  | 7   | 8    |  9    |  0  |   | LFT | DWN  |  UP | RGT |     |      |
+// | SHFT  |     | CUT | COPY | PASTE |     |   |     |      |     |     |     |      |
+//                     | ALT  |       | SPC |   | ENT | BOTH | GUI |
 // -----------------------------------------------------------------------------------------
                         bindings = <
-    &sk LS(LC(LG(LALT)))  &kp N1  &kp N2   &kp N3  &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9    &kp N0  &sk LS(LC(LALT))
-               &kp LCTRL  &kp N6  &kp N7   &kp N8  &kp N9     &kp N0   &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT     &none             &none
-               &kp LSHFT   &none   &none    &none   &none      &none      &none     &none  &kp COMMA    &kp DOT  &kp FSLH             &none
-                                         &kp LALT   &none  &kp SPACE   &kp BSPC     &mo 3  &kp LGUI 
+    &sk LS(LC(LG(LALT)))  &kp N1     &kp N2      &kp N3       &kp N4     &kp N5    &kp N6    &kp N7     &kp N8     &kp N9    &kp N0  &sk LS(LC(LALT))
+               &kp LCTRL  &kp N6     &kp N7      &kp N8       &kp N9     &kp N0  &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT     &none             &none
+               &kp LSHFT   &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE      &none     &none     &none  &kp COMMA    &kp DOT  &kp FSLH             &none
+                                               &kp LALT        &none  &kp SPACE  &kp BSPC     &mo 3   &kp LGUI 
                         >;
                 };
 
